@@ -1,6 +1,7 @@
 MyMedFile
-Membrii: Postolache Eliana Gabriela ( Eliana)
-           Baciu Marian Valentin (Marian)
+Membrii: 
+Postolache Eliana Gabriela ( Eliana)
+Baciu Marian Valentin (Marian)
 
 Idee: Aplicație pentru gestionarea istoricului medical.
 
