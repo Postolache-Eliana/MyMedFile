@@ -11,3 +11,4 @@ Te-ai săturat să fii întrebat de fiecare dată de medici despre istoricul tă
 
 Acum poți face asta cu <Numele aplicației> – soluția completă pentru a-ți gestiona digital toate informațiile medicale, rapid, ușor și ecologic!
 Resurse/tools folosite:
+shecodes.io - css colors/ frontend cheatsheets
