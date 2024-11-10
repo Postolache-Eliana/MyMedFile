@@ -12,3 +12,6 @@ Te-ai săturat să fii întrebat de fiecare dată de medici despre istoricul tă
 Acum poți face asta cu MyMedFile – soluția completă pentru a-ți gestiona digital toate informațiile medicale, rapid, ușor și ecologic!<br>
 Resurse/tools folosite:<br>
 shecodes.io - css colors/ frontend cheatsheets
+wix logo maker -inspiratie <br>
+canva - logo <br>
+flaticon - icons pt logo <br>
