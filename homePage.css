@@ -1,29 +1,39 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 0%;
+    margin: 0%;
   }
   
   .header {
+    background-color: #005477;
     display: grid;
     grid-template-columns: auto 1fr; /* O coloană pentru logo, alta pentru text */
     align-items: center; /* Aliniază vertical elementele la centru */
-    gap: 20px; /* Spațiu între imagine și text */
-    padding: 10px;
+    gap: 10px; /* Spațiu între imagine și text */
+    padding: 0%;
     border-bottom: 1px solid #ccc;
+    height: 100px;
   }
   
   #logo {
     max-width: 100px; /* Ajustează dimensiunea logo-ului */
+    height: 100%;
+    display: block;
   }
   
   .text p:first-child {
     font-size: 24px;
     font-weight: bold;
     margin: 0; /* Elimină marginile implicite */
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .text p:last-child {
     font-size: 16px;
-    color: #666;
+    color:#ffffff;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
   }
   
