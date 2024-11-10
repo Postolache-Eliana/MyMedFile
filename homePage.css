@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: grid;
+    grid-template-columns: auto 1fr; /* O coloană pentru logo, alta pentru text */
+    align-items: center; /* Aliniază vertical elementele la centru */
+    gap: 20px; /* Spațiu între imagine și text */
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  #logo {
+    max-width: 100px; /* Ajustează dimensiunea logo-ului */
+  }
+  
+  .text p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0; /* Elimină marginile implicite */
+  }
+  
+  .text p:last-child {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+  }
+  
