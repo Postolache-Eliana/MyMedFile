@@ -1,0 +1,64 @@
+/* Îndepărtează marginile și paddingul implicite */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    background-color: #5CB8FF;
+}
+
+/* Containerul principal ocupă 100% din înălțime și lățime */
+.container {
+    display: flex;
+    height: 100vh; /* Folosim viewport height pentru a ocupa întreaga pagină */
+    width: 100vw; /* Folosim viewport width pentru a ocupa întreaga lățime */
+}
+
+/* Setează div-urile să ocupe câte 50% fiecare */
+.image-container, .buton-signUp-signIn {
+    flex: 1;
+}
+
+/* Centrarea imaginii */
+.image-center {
+    display: block;
+    margin: auto;
+    max-width: 60%%;
+    max-height: 55%;
+    padding-top:15%;
+    object-fit: cover; /* Ajustează imaginea să acopere întregul spațiu */
+}
+
+/* Stilizare suplimentară pentru buton, opțional */
+.buton-signUp-signIn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* Setează o culoare de fundal pentru a vizualiza secțiunea */
+}
+
+.text p:first-child {
+    font-size: 85px;
+    color:#ffffff;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+.text p:last-child {
+    font-size: 16px;
+    color:#ffffff;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+  
+  h1{
+    font-size: 75px;
+    font-family:"montserrat";
+    font-weight: 190;
+    text-align: center
+  }
