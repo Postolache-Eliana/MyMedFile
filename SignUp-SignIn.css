@@ -8,57 +8,133 @@
 body, html {
     height: 100%;
     width: 100%;
-    background-color: #5CB8FF;
 }
 
 /* Containerul principal ocupă 100% din înălțime și lățime */
 .container {
     display: flex;
-    height: 100vh; /* Folosim viewport height pentru a ocupa întreaga pagină */
-    width: 100vw; /* Folosim viewport width pentru a ocupa întreaga lățime */
+    height: 100vh;
+    width: 100vw;
 }
 
 /* Setează div-urile să ocupe câte 50% fiecare */
 .image-container, .buton-signUp-signIn {
     flex: 1;
+    transition: flex 0.5s ease; /* Efect the tranzitie */
+}
+
+/*Efectul de hover: mareste partea unde este mouse-ul */
+.image-container:hover {
+    flex: 1.2; /* Mareste cu 60% */
+}
+
+.buton-signUp-signIn:hover {
+    flex: 1.2; /* Mareste cu 60% */
+}
+
+/* Micsorarea celeilalte jumatati */
+.image-container:hover ~ .buton-signUp-signIn,
+.buton-signUp-signIn:hover ~ .image-container {
+    flex: 0.8; /* Micsoreasa cu 40% */
 }
 
 /* Centrarea imaginii */
 .image-center {
     display: block;
     margin: auto;
-    max-width: 60%%;
+    max-width: 60%;
     max-height: 55%;
-    padding-top:15%;
-    object-fit: cover; /* Ajustează imaginea să acopere întregul spațiu */
+    padding-top: 15%;
+    object-fit: cover;
 }
 
-/* Stilizare suplimentară pentru buton, opțional */
-.buton-signUp-signIn {
+/* Button styles */
+.button-container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: #ffffff; /* Setează o culoare de fundal pentru a vizualiza secțiunea */
+    align-items: center;
+    margin-top: 20px;
 }
 
+/* "Crează cont" button */
+.create-account {
+    padding: 10px 20px;
+    border: none;
+    background-color: #cbbf63;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-account:hover {
+    background-color: #b7ae65;
+}
+
+/* "Intră în cont" button inside the paragraph */
+.text-signin p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+    margin-top: 15px;
+}
+
+.sign-in {
+    padding: 5px 15px;
+    border: none;
+    background-color: #008CBA;
+    color: white;
+    font-size: 14px;
+    border-radius: 25px; /* Colturi rotunjite */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.sign-in:hover {
+    background-color: #007bb5; /* Albastu inchis la hover */
+}
+
+/* Text styles */
 .text p:first-child {
     font-size: 85px;
-    color:#ffffff;
+    color: #ffffff;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-  }
+}
+
 .text p:last-child {
     font-size: 16px;
-    color:#ffffff;
+    color: #ffffff;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;  
+    text-align: center;
+}
+
+.image-container{
+    background-image: linear-gradient(to bottom right, rgb(208, 208, 174) , rgb(0, 187, 255));
+}
+
+.content-wrapper {
+    text-align: center;
+}
+.buton-signUp-signIn {
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    background-image: linear-gradient(to bottom left, #b0d3e9 0%, #e2ebf0 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 70px;
+    color: #5CB8FF;
+    font-weight: 100;
+    margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-  }
-  
-  h1{
-    font-size: 75px;
-    font-family:"montserrat";
-    font-weight: 190;
-    text-align: center
-  }
+}
